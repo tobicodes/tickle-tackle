@@ -1,23 +1,17 @@
-import { PlayerTable } from "./PlayerTable";
 import "./App.css";
-import * as React from "react";
-import { Heading, Box } from "gestalt";
-
 import "antd/dist/antd.css";
+import * as React from "react";
 import { QuizCard } from "./quizcard";
-// import { players } from "./players";
-// import { getRandomElement } from "./quizcard";
-
-// console.log(getRandomElement(players));
 
 function App() {
   return (
     <div className="App">
-      <Box margin="12">
-        <Heading size="md">tickle tackle</Heading>
-        <QuizCard />
-      </Box>
-      {/* <PlayerTable /> */}
+      <h1 style={{ color: "tomato", fontSize: "4em" }}>TT Squid games</h1>
+      <p style={{ color: "tomato" }}>
+        PS - If you get less than 60%, you're off the team
+      </p>
+
+      <QuizCard />
     </div>
   );
 }
