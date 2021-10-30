@@ -109,7 +109,3 @@ export const QuizCard = (): Node => {
     </Card>
   );
 };
-
-const WinScreen = () => {
-  return <></>;
-};
