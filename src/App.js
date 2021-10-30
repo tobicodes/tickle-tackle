@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { PlayerTable } from "./PlayerTable";
+import "./App.css";
+import * as React from "react";
+import { Heading, Box } from "gestalt";
+
+import "antd/dist/antd.css";
+import { QuizCard } from "./quizcard";
+// import { players } from "./players";
+// import { getRandomElement } from "./quizcard";
+
+// console.log(getRandomElement(players));
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Box margin="12">
+        <Heading size="md">tickle tackle</Heading>
+        <QuizCard />
+      </Box>
+      {/* <PlayerTable /> */}
     </div>
   );
 }
